@@ -1,5 +1,6 @@
 
 <?php
+/**/
 global $veritabani;
 global $KullaniciID;
 global $DolarKuru;
