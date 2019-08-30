@@ -1,4 +1,5 @@
 <?php
+/*xxxx*/
 global $veritabani
 ?>
 <div class="AnaSayfaKapsamaAlani">
