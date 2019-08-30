@@ -1,0 +1,1292 @@
+@charset "UTF-8";
+html {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  overflow-y: visible; }
+
+/**{
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}*/
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  overflow-x: hidden;
+  overflow-y: visible;
+  font-family: 'Open Sans', sans-serif;
+  color: #FFF;
+  background-color: #123035;
+  line-height: 1.5;
+  font-size: 14px;
+  font-weight: 600; }
+
+.YonetimPaneliYoneticiGirisSayfasiKapsamaAlani {
+  position: absolute;
+  display: block;
+  width: 20%;
+  height: auto;
+  left: 50%;
+  top: 50%;
+  bottom: 0;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+  vertical-align: top;
+  text-align: center; }
+
+.YoneticiGirisSayfasiSinirlamaAlani {
+  display: block;
+  width: calc(100% - 60px);
+  height: auto;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+  vertical-align: top;
+  text-align: center;
+  padding: 30px; }
+
+.YonetimPaneliUstLogoAlani {
+  display: block;
+  width: 100%;
+  height: 120px;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+  text-align: center;
+  background-color: transparent;
+  margin-bottom: 15px; }
+  .YonetimPaneliUstLogoAlani img {
+    display: block;
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+    text-align: center;
+    background-color: transparent; }
+
+.YoneticiGirdiBasliklari {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+  text-align: left;
+  margin-bottom: 1px;
+  font-size: 15px;
+  color: white;
+  font-weight: 400; }
+
+.YoneticiGirdiKutulari {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+  text-align: left;
+  margin-bottom: 3px; }
+
+.YoneticiPaneliTextInputlari {
+  display: block;
+  float: left;
+  width: 100%;
+  width: calc(100% - 18px);
+  height: auto;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+  border: none;
+  outline: none;
+  text-align: left;
+  padding: 8px;
+  border-radius: 3px;
+  background-color: #28427A;
+  caret-color: #FFF;
+  border: 0.5px solid #f9f9f9;
+  color: #ddeedd;
+  -webkit-transition: 600ms ease-out all;
+  -moz-transition: 600ms ease-out all;
+  -ms-transition: 600ms ease-out all;
+  -o-transition: 600ms ease-out all;
+  transition: 600ms ease-out all; }
+  .YoneticiPaneliTextInputlari:hover {
+    border: 0.5px solid #2a2a77; }
+  .YoneticiPaneliTextInputlari:focus {
+    border: 0.5px solid #2a2a77; }
+
+.YonetimPaneliButtonKutusu {
+  position: relative;
+  float: left;
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+  text-align: center;
+  background-color: transparent; }
+  .YonetimPaneliButtonKutusu .YonetimPaneliGirisButtonu {
+    display: block;
+    float: left;
+    width: 100%;
+    width: calc(100% - 0px);
+    height: auto;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+    border: none;
+    outline: none;
+    text-align: left;
+    padding: 8px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 400;
+    background-color: #173344;
+    border-radius: 3px;
+    margin-top: 10px;
+    color: white;
+    font-weight: 400;
+    -webkit-transition: 600ms ease-out all;
+    -moz-transition: 600ms ease-out all;
+    -ms-transition: 600ms ease-out all;
+    -o-transition: 600ms ease-out all;
+    transition: 600ms ease-out all; }
+    .YonetimPaneliButtonKutusu .YonetimPaneliGirisButtonu:hover {
+      background-color: #13212e;
+      cursor: pointer; }
+
+.YoneticiPaneliTamSayfaKapsamaAlani {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+  text-align: center;
+  background-color: #123035; }
+
+.YoneticiPaneliSinirlamaAlani {
+  display: block;
+  width: 75%;
+  height: auto;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+  text-align: center; }
+
+.YoneticiPaneliSolMenuAlani {
+  position: relative;
+  float: left;
+  display: block;
+  width: 25%;
+  height: auto;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+  border: none;
+  outline: none; }
+
+.YonetimPaneliSolMenuListeAlani {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+  text-align: left;
+  vertical-align: top;
+  list-style: none;
+  background-color: #201d5633;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-radius: 3px;
+  margin-top: 10px; }
+  .YonetimPaneliSolMenuListeAlani .YonetimPaneliSolMenuElemanlari {
+    display: block;
+    width: calc(80% - 10px);
+    height: 30px;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+    text-align: left;
+    line-height: 30px;
+    background-color: red;
+    margin-bottom: 5px;
+    padding-left: 10px;
+    background-color: #35352bba;
+    cursor: pointer;
+    border: 1px solid #598c78;
+    -webkit-transition: 600ms ease-out all;
+    -moz-transition: 600ms ease-out all;
+    -ms-transition: 600ms ease-out all;
+    -o-transition: 600ms ease-out all;
+    transition: 600ms ease-out all;
+    border-radius: 3px; }
+    .YonetimPaneliSolMenuListeAlani .YonetimPaneliSolMenuElemanlari a:active, .YonetimPaneliSolMenuListeAlani .YonetimPaneliSolMenuElemanlari a:visited, .YonetimPaneliSolMenuListeAlani .YonetimPaneliSolMenuElemanlari a:link {
+      text-decoration: none;
+      color: white;
+      font-size: 14px;
+      -webkit-transition: 600ms ease-out all;
+      -moz-transition: 600ms ease-out all;
+      -ms-transition: 600ms ease-out all;
+      -o-transition: 600ms ease-out all;
+      transition: 600ms ease-out all; }
+    .YonetimPaneliSolMenuListeAlani .YonetimPaneliSolMenuElemanlari:hover {
+      -webkit-transition: 600ms ease-out all;
+      -moz-transition: 600ms ease-out all;
+      -ms-transition: 600ms ease-out all;
+      -o-transition: 600ms ease-out all;
+      transition: 600ms ease-out all;
+      background-color: #122535; }
+  .YonetimPaneliSolMenuListeAlani .YonetimPaneliSolMenuLogoAlani {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+    text-align: center;
+    margin-bottom: 15px; }
+    .YonetimPaneliSolMenuListeAlani .YonetimPaneliSolMenuLogoAlani img {
+      display: block;
+      width: 192px;
+      height: 35px;
+      margin: 0 auto;
+      padding: 0;
+      overflow: hidden;
+      text-align: center; }
+
+.YonetiPanelSagMenuAlani {
+  position: relative;
+  display: block;
+  width: calc(60% - 35px);
+  height: auto;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+  text-align: center;
+  padding: 15px;
+  margin-top: 10px;
+  background-color: #0a3d62;
+  padding-left: 5px;
+  float: left;
+  margin-left: 8px; }
+
+.YoneticiSayfasiSayfalarKapsamaAlani {
+  position: relative;
+  display: block;
+  width: calc(100% - 7px);
+  height: auto;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+  padding-left: 7px; }
+
+.YoneticiSayfasiSayfalarBasligi {
+  float: left;
+  display: block;
+  width: calc(100% - 24px);
+  height: auto;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+  text-align: left;
+  padding: 12px;
+  background-color: #e55039;
+  -webkit-transition: 600ms ease-out all;
+  -moz-transition: 600ms ease-out all;
+  -ms-transition: 600ms ease-out all;
+  -o-transition: 600ms ease-out all;
+  transition: 600ms ease-out all;
+  border-radius: 3px;
+  font-size: 16px;
+  margin-bottom: 7px; }
+  .YoneticiSayfasiSayfalarBasligi a:active, .YoneticiSayfasiSayfalarBasligi a:visited, .YoneticiSayfasiSayfalarBasligi a:link {
+    text-decoration: none;
+    color: white;
+    color: #2c3e50; }
+    .YoneticiSayfasiSayfalarBasligi a:active:hover, .YoneticiSayfasiSayfalarBasligi a:visited:hover, .YoneticiSayfasiSayfalarBasligi a:link:hover {
+      -webkit-transition: 600ms ease-out all;
+      -moz-transition: 600ms ease-out all;
+      -ms-transition: 600ms ease-out all;
+      -o-transition: 600ms ease-out all;
+      transition: 600ms ease-out all;
+      color: #1c2939; }
+
+.YoneticiSayfasiSayfaIcerikleri {
+  display: block;
+  width: 100% -10px;
+  height: auto;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+  text-align: left;
+  background-color: transparent;
+  border: 1px solid #183120;
+  padding: 4px;
+  border-radius: 3px; }
+
+.sifirla {
+  border: none !important;
+  outline: none !important; }
+
+.TextAreaIylestirme {
+  overflow: auto !important; }
+
+.InputAciklamaMetinleriKapsamaAlani {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+  text-align: left;
+  vertical-align: top;
+  background-color: transparent;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 5px;
+  padding-top: 2px;
+  padding-bottom: 2px; }
+  .InputAciklamaMetinleriKapsamaAlani .InputAciklamaMetini {
+    float: left;
+    display: block;
+    width: 30%;
+    height: auto;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+    text-align: left;
+    color: #ddeedd;
+    font-size: 15px;
+    line-height: 33px; }
+  .InputAciklamaMetinleriKapsamaAlani .YonetimPaneliStandartInput {
+    display: block;
+    float: left;
+    width: 60%;
+    height: auto;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+    text-align: left;
+    padding-left: 7px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border: none;
+    outline: none;
+    background-color: initial;
+    color: white;
+    border-radius: 3px;
+    border: 1px solid #005c7a;
+    background-color: rgba(15, 44, 46, 0.89);
+    caret-color: #f9f9f9;
+    -webkit-transition: 600ms ease-out all;
+    -moz-transition: 600ms ease-out all;
+    -ms-transition: 600ms ease-out all;
+    -o-transition: 600ms ease-out all;
+    transition: 600ms ease-out all; }
+    .InputAciklamaMetinleriKapsamaAlani .YonetimPaneliStandartInput:hover {
+      -webkit-transition: 600ms ease-out all;
+      -moz-transition: 600ms ease-out all;
+      -ms-transition: 600ms ease-out all;
+      -o-transition: 600ms ease-out all;
+      transition: 600ms ease-out all;
+      -webkit-box-shadow: 0px 0px 5px 3px #227093;
+      box-shadow: 0px 0px 5px 3px #227093; }
+    .InputAciklamaMetinleriKapsamaAlani .YonetimPaneliStandartInput:focus {
+      -webkit-transition: 600ms ease-out all;
+      -moz-transition: 600ms ease-out all;
+      -ms-transition: 600ms ease-out all;
+      -o-transition: 600ms ease-out all;
+      transition: 600ms ease-out all;
+      -webkit-box-shadow: 0px 0px 5px 3px #227093;
+      box-shadow: 0px 0px 5px 3px #227093; }
+
+.FormdakiVerileriGondermekIcinSubmitAlani {
+  display: block;
+  width: auto;
+  height: auto;
+  margin-left: 30.9%;
+  padding: 0; }
+  .FormdakiVerileriGondermekIcinSubmitAlani .YonetimPaneliStandartInput {
+    display: block;
+    float: left;
+    width: auto;
+    height: auto;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+    overflow: hidden;
+    border: none;
+    outline: none;
+    color: initial;
+    padding: 8px 8px 8px 8px;
+    border-radius: 3px;
+    background-color: #005c7a;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    border: 1px solid transparent;
+    -webkit-transition: 600ms ease-out all;
+    -moz-transition: 600ms ease-out all;
+    -ms-transition: 600ms ease-out all;
+    -o-transition: 600ms ease-out all;
+    transition: 600ms ease-out all; }
+    .FormdakiVerileriGondermekIcinSubmitAlani .YonetimPaneliStandartInput:hover {
+      background-color: #00374e;
+      border: 1px solid #ffb142; }
+
+.SolGeriDonButton {
+  border: 1px solid #2b0b0b;
+  display: inline;
+  padding: 10px;
+  border-radius: 3px; }
+  .SolGeriDonButton a:active, .SolGeriDonButton a:visited, .SolGeriDonButton a:link {
+    text-decoration: none;
+    color: white; }
+  .SolGeriDonButton:hover {
+    background-color: #01579B; }
+
+.YonetimPaneliTextAreaKutulari {
+  display: block;
+  display: block;
+  float: left;
+  width: 60%;
+  height: 200px;
+  margin: 0 auto;
+  padding: 0;
+  overflow-x: hidden;
+  overflow-y: visible;
+  text-align: left;
+  padding-left: 7px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border: none;
+  outline: none;
+  background-color: initial;
+  color: white;
+  border-radius: 3px;
+  border: 1px solid #005c7a;
+  background-color: rgba(15, 44, 46, 0.89);
+  caret-color: #f9f9f9;
+  -webkit-transition: 600ms ease-out all;
+  -moz-transition: 600ms ease-out all;
+  -ms-transition: 600ms ease-out all;
+  -o-transition: 600ms ease-out all;
+  transition: 600ms ease-out all; }
+  .YonetimPaneliTextAreaKutulari:hover {
+    -webkit-transition: 600ms ease-out all;
+    -moz-transition: 600ms ease-out all;
+    -ms-transition: 600ms ease-out all;
+    -o-transition: 600ms ease-out all;
+    transition: 600ms ease-out all;
+    -webkit-box-shadow: 0px 0px 5px 3px #227093;
+    box-shadow: 0px 0px 5px 3px #227093; }
+  .YonetimPaneliTextAreaKutulari:focus {
+    -webkit-transition: 600ms ease-out all;
+    -moz-transition: 600ms ease-out all;
+    -ms-transition: 600ms ease-out all;
+    -o-transition: 600ms ease-out all;
+    transition: 600ms ease-out all;
+    -webkit-box-shadow: 0px 0px 5px 3px #227093;
+    box-shadow: 0px 0px 5px 3px #227093; }
+
+.BankaHesaplariKapsamaAlani, .BankaHesaplariSinirlamaAlani {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+  text-align: center;
+  vertical-align: top;
+  background-color: transparent;
+  margin-bottom: 10px; }
+
+.BankaHesaplariKutuModeliAlani {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+  text-align: center;
+  vertical-align: top;
+  background-color: #0a2a4d; }
+
+.BankaHesaplariSolLogoAltMenulerAlanlariAlani {
+  display: block;
+  float: left;
+  width: 25%;
+  height: 113px;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+  background-color: transparent;
+  text-align: center;
+  border: 1px solid #CCC; }
+  .BankaHesaplariSolLogoAltMenulerAlanlariAlani .BankaLogoAlani {
+    display: block;
+    width: 100%;
+    height: 35px;
+    margin: 0 auto;
+    padding: 0;
+    margin-top: 30px;
+    overflow: hidden;
+    margin-bottom: 20px; }
+    .BankaHesaplariSolLogoAltMenulerAlanlariAlani .BankaLogoAlani img {
+      float: left;
+      display: block;
+      width: 100%;
+      height: 35px;
+      margin: 0 auto;
+      padding: 0;
+      overflow: hidden;
+      background-color: transparent; }
+
+.BankaAltMenuAlani {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+  text-align: center;
+  list-style: none; }
+
+.BankaMenuleri {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+  text-align: center;
+  list-style: none; }
+  .BankaMenuleri a:active, .BankaMenuleri a:visited, .BankaMenuleri a:link {
+    text-decoration: none;
+    color: white; }
+    .BankaMenuleri a:active .BankaMenu, .BankaMenuleri a:visited .BankaMenu, .BankaMenuleri a:link .BankaMenu {
+      list-style: none;
+      display: inline-block;
+      width: auto;
+      height: auto;
+      margin: 0 auto;
+      padding: 0;
+      overflow: hidden;
+      text-align: center;
+      vertical-align: top;
+      margin-right: 10px; }
+      .BankaMenuleri a:active .BankaMenu img, .BankaMenuleri a:visited .BankaMenu img, .BankaMenuleri a:link .BankaMenu img {
+        display: inline;
+        width: 20px;
+        height: 20px;
+        vertical-align: top;
+        margin-right: 2px; }
+
+.BankaHesaplariSagBilgilerAlani {
+  display: block;
+  width: calc(100% - 206px);
+  float: left;
+  height: auto;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+  text-align: left;
+  background-color: transparent;
+  font-size: 15px;
+  font-weight: 400;
+  color: #ddeedd; }
+  .BankaHesaplariSagBilgilerAlani .BankaKartVeyaHesapBilgileri {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+    text-align: left;
+    background-color: transparent;
+    font-size: 15px;
+    font-weight: 400;
+    color: #ddeedd;
+    margin-left: 20px;
+    margin-top: 10px; }
+
+.KartBilgileri {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+  text-align: left;
+  list-style: none; }
+
+.SiteAyarlariSagTarafYeniKrediKartiEkle {
+  display: inline;
+  width: auto;
+  height: auto;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+  text-align: right;
+  float: right; }
+
+.KargoFirmalariKapsamaAlani {
+  float: left;
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+  text-align: center; }
+
+.KargoFirmalariSinirlamaAlani {
+  display: block;
+  width: calc(100% - 20px);
+  height: auto;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+  text-align: center;
+  padding: 0px 10px 10px 10px;
+  background-color: #0a2a4d; }
+
+.KargoFirmalari {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+  text-align: center;
+  padding-left: 0px;
+  padding-top: 15px;
+  text-align: center;
+  padding-bottom: 10px;
+  border-bottom: 2px dashed #ff7675;
+  margin-top: 10px;
+  margin-bottom: 10px; }
+
+.KargoFirmalariSolLogoAlani {
+  display: block;
+  float: left;
+  width: auto;
+  height: 30px;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+  text-align: left; }
+  .KargoFirmalariSolLogoAlani img {
+    display: block;
+    width: auto;
+    height: 30px;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+    text-align: center; }
+
+.KargoFirmasiAdi {
+  float: left;
+  display: block;
+  width: auto;
+  height: auto;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+  text-align: center;
+  margin-left: 10%;
+  margin-top: 0px;
+  padding: 5px 7px 5px 7px;
+  background-color: #55efc4;
+  color: #2c3e50;
+  font-weight: 600;
+  border-radius: 3px; }
+
+.KargoFirmalariSagGuncelleVeSilAlani {
+  display: block;
+  float: right;
+  width: auto;
+  height: auto;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+  background-color: #0984e3;
+  border: 1px solid #00b894;
+  padding: 5px;
+  border-radius: 3px; }
+  .KargoFirmalariSagGuncelleVeSilAlani a:active, .KargoFirmalariSagGuncelleVeSilAlani a:visited, .KargoFirmalariSagGuncelleVeSilAlani a:link {
+    text-decoration: none;
+    color: white;
+    color: #2d3436; }
+  .KargoFirmalariSagGuncelleVeSilAlani .KargoGuncelle {
+    display: inline-block;
+    float: left;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+    text-align: left;
+    margin-left: 10px;
+    vertical-align: top; }
+    .KargoFirmalariSagGuncelleVeSilAlani .KargoGuncelle img {
+      vertical-align: top;
+      margin-top: 1px;
+      margin-right: 2px; }
+
+.KargoSil {
+  display: inline-block;
+  float: left;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+  text-align: left;
+  margin-left: 15px;
+  margin-right: 10px;
+  vertical-align: top; }
+  .KargoSil img {
+    vertical-align: top;
+    margin-top: 1px;
+    margin-right: 2px; }
+
+.DestekIcerikleriAlani, .DestekIcerikleriAlani .DestekIcerikleriMetinAlanlari {
+  display: block;
+  width: calc(100% - 14px);
+  height: auto;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+  padding: 7px; }
+  .DestekIcerikleriAlani .DestekIcerikleriMetinAlanlari {
+    margin-bottom: 10px;
+    border: 1px solid #01579B;
+    border-radius: 3px; }
+    .DestekIcerikleriAlani .DestekIcerikleriMetinAlanlari .DestekIcerikleriSoruBasligi {
+      display: block;
+      float: left;
+      width: 80%;
+      height: auto;
+      margin: 0 auto;
+      padding: 0;
+      overflow: hidden;
+      font-size: 18px;
+      color: #c37902; }
+    .DestekIcerikleriAlani .DestekIcerikleriMetinAlanlari .DestekIcerikleriSoruCevabi {
+      display: block;
+      float: left;
+      width: 80%;
+      height: auto;
+      margin: 0 auto;
+      padding: 0;
+      overflow: hidden;
+      font-size: 13px; }
+    .DestekIcerikleriAlani .DestekIcerikleriMetinAlanlari .DestekSagGuncelleveSilAlani {
+      display: block;
+      width: auto;
+      height: auto;
+      margin: 0 auto;
+      padding: 0;
+      overflow: hidden; }
+      .DestekIcerikleriAlani .DestekIcerikleriMetinAlanlari .DestekSagGuncelleveSilAlani a:active, .DestekIcerikleriAlani .DestekIcerikleriMetinAlanlari .DestekSagGuncelleveSilAlani a:visited, .DestekIcerikleriAlani .DestekIcerikleriMetinAlanlari .DestekSagGuncelleveSilAlani a:link {
+        text-decoration: none;
+        color: white; }
+      .DestekIcerikleriAlani .DestekIcerikleriMetinAlanlari .DestekSagGuncelleveSilAlani .SagGuncelleAlaniDestek {
+        display: inline-block;
+        float: left;
+        margin-left: 10%;
+        margin-top: 15%; }
+        .DestekIcerikleriAlani .DestekIcerikleriMetinAlanlari .DestekSagGuncelleveSilAlani .SagGuncelleAlaniDestek a {
+          vertical-align: top;
+          padding-left: 5px; }
+      .DestekIcerikleriAlani .DestekIcerikleriMetinAlanlari .DestekSagGuncelleveSilAlani .SagSilAlaniDestek {
+        display: inline-block;
+        float: left;
+        margin-left: 5%;
+        margin-top: 15%; }
+        .DestekIcerikleriAlani .DestekIcerikleriMetinAlanlari .DestekSagGuncelleveSilAlani .SagSilAlaniDestek a {
+          vertical-align: top;
+          padding-left: 5px; }
+
+.MenulerSinirlamaAlani {
+  position: relative;
+  display: block;
+  width: calc(100% - 6px);
+  height: auto;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+  padding: 3px; }
+
+.MenulerKapsamaAlani, .MenulerKapsamaAlani .MenulerAlani {
+  display: block;
+  width: calc(100% - 10px);
+  height: auto;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+  padding: 0 5px 5px 5px; }
+  .MenulerKapsamaAlani .MenulerAlani {
+    padding-bottom: 10px;
+    border-bottom: 2px double #17567f;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    padding-top: 3px; }
+
+.MenuUrunTuruAlani, .MenulerUrunTuruMenusuAlani, .MenulerGuncelleveSilSagAlan {
+  display: block;
+  width: calc(100% / 3);
+  float: left;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+  text-align: left; }
+
+.MenulerGuncelleveSilSagAlan {
+  float: right; }
+  .MenulerGuncelleveSilSagAlan a:active, .MenulerGuncelleveSilSagAlan a:visited, .MenulerGuncelleveSilSagAlan a:link {
+    text-decoration: none;
+    color: white; }
+  .MenulerGuncelleveSilSagAlan .KargoGuncelle {
+    float: left;
+    display: inline-block;
+    margin-left: 30%; }
+    .MenulerGuncelleveSilSagAlan .KargoGuncelle img {
+      vertical-align: top;
+      margin-right: 2px; }
+  .MenulerGuncelleveSilSagAlan .KargoSil {
+    display: inline-block; }
+    .MenulerGuncelleveSilSagAlan .KargoSil img {
+      vertical-align: top; }
+
+.YoneticilerSinirlamaAlani {
+  position: relative;
+  display: block;
+  width: calc(100% - 6px);
+  height: auto;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+  padding: 3px; }
+
+.YoneticilerKapsamaAlani, .YoneticilerKapsamaAlani .YoneticilerAlani {
+  display: block;
+  width: calc(100% - 10px);
+  height: auto;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+  padding: 0 5px 5px 5px; }
+  .YoneticilerKapsamaAlani .YoneticilerAlani {
+    padding-bottom: 10px;
+    border-bottom: 2px double #17567f;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    padding-top: 3px; }
+
+.YoneticiBlok, .YoneticilerUrunTuruMenusuAlani, .YoneticilerGuncelleveSilSagAlan {
+  display: block;
+  width: calc(100% / 5);
+  float: left;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+  text-align: left; }
+
+.YoneticilerGuncelleveSilSagAlan {
+  float: right; }
+  .YoneticilerGuncelleveSilSagAlan a:active, .YoneticilerGuncelleveSilSagAlan a:visited, .YoneticilerGuncelleveSilSagAlan a:link {
+    text-decoration: none;
+    color: white; }
+  .YoneticilerGuncelleveSilSagAlan .KargoGuncelle {
+    float: left;
+    display: inline-block;
+    margin-left: 30%; }
+    .YoneticilerGuncelleveSilSagAlan .KargoGuncelle img {
+      vertical-align: top;
+      margin-right: 2px; }
+  .YoneticilerGuncelleveSilSagAlan .KargoSil {
+    display: inline-block; }
+    .YoneticilerGuncelleveSilSagAlan .KargoSil img {
+      vertical-align: top; }
+
+.UyelerKapsamaAlani, .UyelerKapsamaAlani .UyelerSinirlamaAlani {
+  display: block;
+  float: left;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden; }
+
+.UyeninBilgilerininOlduguAlan {
+  display: block;
+  float: left;
+  width: calc(100% - 10px);
+  height: auto;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+  border: 1px solid #CCC;
+  margin-bottom: 7px;
+  padding-left: 5px;
+  padding-right: 2px;
+  border-radius: 3px; }
+  .UyeninBilgilerininOlduguAlan a:active, .UyeninBilgilerininOlduguAlan a:visited, .UyeninBilgilerininOlduguAlan a:link {
+    text-decoration: none;
+    color: white; }
+  .UyeninBilgilerininOlduguAlan .UyeBilgileri {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+    list-style: none;
+    padding: 5px; }
+    .UyeninBilgilerininOlduguAlan .UyeBilgileri .bilgiler {
+      display: inline-block;
+      width: auto;
+      margin: 0 auto;
+      padding: 0;
+      overflow: hidden;
+      text-align: left;
+      float: left;
+      width: calc(100% /3);
+      padding: 2px;
+      margin-right: 2px; }
+      .UyeninBilgilerininOlduguAlan .UyeBilgileri .bilgiler .UyeAciklamasi {
+        display: block;
+        width: auto;
+        height: auto;
+        float: left;
+        margin: 0 auto;
+        padding: 0;
+        overflow: hidden;
+        text-align: left; }
+
+.UyeyiSilAlani {
+  display: inline-block;
+  float: right;
+  width: auto;
+  height: auto;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+  text-align: center;
+  margin-left: 5%;
+  padding: 10px;
+  background-color: #01579B;
+  border-radius: 3px;
+  margin-right: 5%;
+  margin-top: -5.3%; }
+  .UyeyiSilAlani a:active, .UyeyiSilAlani a:visited, .UyeyiSilAlani a:link {
+    text-decoration: none;
+    color: white; }
+  .UyeyiSilAlani img {
+    display: inline;
+    width: 20px;
+    height: 20px;
+    vertical-align: top;
+    margin-left: 3px;
+    margin-right: 3px; }
+
+/*SAYFALAMA ALANİ*/
+.SayfalamaKapsamaAlani {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+  text-align: center;
+  outline: none;
+  color: initial;
+  margin-top: 15px; }
+  .SayfalamaKapsamaAlani .SayfalamaSinirlamaAlani {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+    text-align: center; }
+    .SayfalamaKapsamaAlani .SayfalamaSinirlamaAlani .Sayfalama {
+      display: inline-block;
+      width: auto;
+      height: auto;
+      margin: 0 auto;
+      padding: 0;
+      overflow: hidden;
+      text-align: center;
+      border: none;
+      outline: none;
+      border: 1px solid #CCC;
+      padding: 4px 11px 4px 10px;
+      background-color: #009688;
+      border-radius: 3px;
+      cursor: pointer;
+      color: #fff;
+      margin-right: 3px;
+      -webkit-transition: 600ms ease-out all;
+      -moz-transition: 600ms ease-out all;
+      -ms-transition: 600ms ease-out all;
+      -o-transition: 600ms ease-out all;
+      transition: 600ms ease-out all; }
+      .SayfalamaKapsamaAlani .SayfalamaSinirlamaAlani .Sayfalama a:active, .SayfalamaKapsamaAlani .SayfalamaSinirlamaAlani .Sayfalama a:visited, .SayfalamaKapsamaAlani .SayfalamaSinirlamaAlani .Sayfalama a:link {
+        text-decoration: none;
+        color: white; }
+      .SayfalamaKapsamaAlani .SayfalamaSinirlamaAlani .Sayfalama:hover {
+        background-color: #004D40;
+        cursor: pointer; }
+    .SayfalamaKapsamaAlani .SayfalamaSinirlamaAlani .SayfalamaPasif {
+      background-color: #FFA000; }
+      .SayfalamaKapsamaAlani .SayfalamaSinirlamaAlani .SayfalamaPasif:hover {
+        background-color: #FFA000; }
+
+.UrunAramaAlani {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  padding-bottom: 0;
+  overflow: hidden;
+  float: left;
+  background-color: transparent; }
+
+.FormInputAramaAlani {
+  float: left;
+  display: block;
+  width: 95%;
+  height: auto;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+  text-align: center;
+  margin-top: 5px;
+  -webkit-user-select: all;
+  -moz-user-select: all;
+  -ms-user-select: all;
+  user-select: all; }
+
+.AramaAlaniInputu {
+  display: block;
+  width: calc(100% - 7px);
+  height: auto;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+  text-align: left;
+  padding-left: 5px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  border: 1px solid #CCC;
+  border-radius: 2px;
+  -webkit-user-select: text;
+  -moz-user-select: text;
+  -ms-user-select: text;
+  user-select: text;
+  color: #342321;
+  font-weight: 400;
+  font-size: 15px; }
+
+.FormGonderButtonu {
+  display: block;
+  float: left;
+  width: calc(5% - 2px);
+  height: auto;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+  margin-top: 5px;
+  margin-left: 2px;
+  -webkit-transition: 500ms ease-out all;
+  -moz-transition: 500ms ease-out all;
+  -ms-transition: 500ms ease-out all;
+  -o-transition: 500ms ease-out all;
+  transition: 500ms ease-out all; }
+  .FormGonderButtonu:hover {
+    -webkit-transition: 500ms ease-out all;
+    -moz-transition: 500ms ease-out all;
+    -ms-transition: 500ms ease-out all;
+    -o-transition: 500ms ease-out all;
+    transition: 500ms ease-out all;
+    background-color: #dddddd; }
+
+.AramaAlaniButtonu {
+  display: block;
+  float: left;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+  border: none;
+  outline: none;
+  border: 1px solid #CCC;
+  line-height: 31px;
+  background: url("../Resimler/AraButonuIciBuyuteci.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 55%;
+  border-radius: 2px; }
+
+.AramaAlaniUyelerIcerisinde {
+  margin-bottom: 15px; }
+
+.YoneticiSayfasiuyelerAramaButtonu {
+  border: 1px solid #c37902 !important; }
+
+.UyelerInput {
+  border: 1px solid #c37902 !important;
+  color: #ddeedd; }
+
+.Silinmisolanuyelerigeriac {
+  position: relative;
+  display: block;
+  float: left;
+  width: calc(100% - 13px);
+  height: auto;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+  text-align: center;
+  vertical-align: top;
+  background-color: #3e7d58;
+  color: #fff;
+  font-weight: 500;
+  padding: 5px;
+  margin-bottom: 5px;
+  -webkit-transition: 600ms ease-out all;
+  -moz-transition: 600ms ease-out all;
+  -ms-transition: 600ms ease-out all;
+  -o-transition: 600ms ease-out all;
+  transition: 600ms ease-out all;
+  border-radius: 3px; }
+  .Silinmisolanuyelerigeriac:hover {
+    -webkit-transition: 600ms ease-out all;
+    -moz-transition: 600ms ease-out all;
+    -ms-transition: 600ms ease-out all;
+    -o-transition: 600ms ease-out all;
+    transition: 600ms ease-out all;
+    background-color: #254b36; }
+
+.YorumSayfasiKapsamaAlani, .YorumlarAlani {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+  border: none;
+  outline: none;
+  font-size: 13px; }
+
+.YorumlarAlani {
+  width: calc(100% - 12px);
+  border: 1px solid #CCC;
+  padding: 5px 5px 0px 5px;
+  margin-bottom: 7px;
+  margin-top: 7px;
+  border-radius: 3px; }
+
+.YorumMetinAlani {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  padding: 0;
+  max-height: 100px;
+  overflow: auto;
+  border: none;
+  outline: none; }
+
+.YorumMetniniSilAlani {
+  display: block;
+  width: auto;
+  float: right;
+  height: auto;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+  border: none;
+  outline: none;
+  padding: 5px;
+  margin-right: -0.5px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  background-color: #f1c40f;
+  -webkit-transition: 400ms ease-out all;
+  -moz-transition: 400ms ease-out all;
+  -ms-transition: 400ms ease-out all;
+  -o-transition: 400ms ease-out all;
+  transition: 400ms ease-out all;
+  border-radius: 3px;
+  cursor: pointer; }
+  .YorumMetniniSilAlani a:active, .YorumMetniniSilAlani a:visited, .YorumMetniniSilAlani a:link {
+    text-decoration: none;
+    color: white;
+    vertical-align: top;
+    display: inline-block;
+    width: auto;
+    height: auto;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+    color: #0f0f0f;
+    font-weight: 600; }
+    .YorumMetniniSilAlani a:active img, .YorumMetniniSilAlani a:visited img, .YorumMetniniSilAlani a:link img {
+      display: inline-block;
+      vertical-align: top;
+      margin-top: -1px;
+      margin-right: -2px; }
+  .YorumMetniniSilAlani:hover {
+    background-color: #7a590f; }
+    .YorumMetniniSilAlani:hover a {
+      -webkit-transition: 400ms ease-out all;
+      -moz-transition: 400ms ease-out all;
+      -ms-transition: 400ms ease-out all;
+      -o-transition: 400ms ease-out all;
+      transition: 400ms ease-out all;
+      color: #fff;
+      font-weight: 600; }
+
+.YorumPuanlamaAlani {
+  float: left;
+  display: block;
+  width: auto;
+  height: auto;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+  margin-top: 15px;
+  margin-left: 5px; }
+  .YorumPuanlamaAlani img {
+    display: block;
+    width: 64px;
+    height: 11px;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden; }

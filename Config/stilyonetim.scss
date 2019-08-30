@@ -1,0 +1,1410 @@
+@import "mixin.scss";
+@charset "utf8";
+
+
+$griRenk:#646464;
+$SayfaBaslikArkaPlanRengi:#2c3e50;
+$SayfaBaslikRengi:#e74c3c;
+$SayfaBaslikYuksekligi:35px;
+$standartFormFontBoyutu: 13px;
+$KompleSolAlan:23%;
+html{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x:hidden;
+  overflow-y: visible;
+}
+/**{
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}*/
+body{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  overflow-x: hidden;
+  overflow-y: visible;
+  font-family: 'Open Sans', sans-serif;
+  color: #FFF;
+  background-color: #123035;
+  line-height: 1.5;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.YonetimPaneliYoneticiGirisSayfasiKapsamaAlani{
+  position: absolute;
+  display: block;
+  width: 20%;
+  height: auto;
+  left: 50%;
+  top: 50%;
+  bottom: 0;
+  transform: translate(-50%,-50%);
+  margin:0 auto;
+  padding:0;
+  overflow: hidden;
+  vertical-align: top;
+  text-align: center;
+}
+
+.YoneticiGirisSayfasiSinirlamaAlani{
+  display: block;
+  width: calc(100% - 60px);
+  height: auto;
+  margin:0 auto;
+  padding: 0;
+  overflow: hidden;
+  vertical-align: top;
+  text-align: center;
+  padding: 30px;
+}
+
+.YonetimPaneliUstLogoAlani{
+  display: block;
+  width: 100%;
+  height: 120px;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+  text-align: center;
+  background-color: transparent;
+  img{
+    display: block;
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+    text-align: center;
+    background-color: transparent;
+  }
+  margin-bottom: 15px;
+}
+
+.YoneticiGirdiBasliklari{
+  display: block;
+  width: 100%;
+  height: auto;
+  margin:0 auto;
+  padding: 0;
+  overflow: hidden;
+  text-align: left;
+  margin-bottom: 1px;
+  font-size: 15px;
+  color: white;
+  font-weight: 400;
+
+}
+
+
+
+.YoneticiGirdiKutulari{
+  position: relative;
+  display:block;
+  width: 100%;
+  height: auto;
+  margin:0 auto;
+  padding:0;
+  overflow: hidden;
+  text-align: left;
+  margin-bottom: 3px;
+}
+
+.YoneticiPaneliTextInputlari{
+  display: block;
+  float: left;
+  width: 100%;
+  width: calc(100% - 18px);
+  height: auto;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+  border:none;
+  outline:none;
+  text-align: left;
+  padding: 8px;
+  @include KutuKoseleriniYuvarla();
+  background-color:#28427A;
+  caret-color:#FFF;
+  border:0.5px solid #f9f9f9;
+  color: #ddeedd;
+  @include gecisEgrisi();
+  &:hover{
+    border:0.5px solid #2a2a77;
+  }
+  &:focus{
+    border:0.5px solid #2a2a77;
+  }
+}
+
+.YonetimPaneliButtonKutusu{
+  position: relative;
+  float: left;
+  display: block;
+  width: 100%;
+  height: auto;
+  margin:0 auto;
+  padding: 0;
+  overflow: hidden;
+  text-align: center;
+  background-color: transparent;
+  .YonetimPaneliGirisButtonu{
+    display: block;
+    float: left;
+    width: 100%;
+    width: calc(100% - 0px);
+    height: auto;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+    border:none;
+    outline:none;
+    text-align: left;
+    padding: 8px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 400;
+    background-color:#173344;
+    @include KutuKoseleriniYuvarla();
+    margin-top: 10px;
+    color: white;
+    font-weight: 400;
+    @include gecisEgrisi();
+    &:hover{
+      background-color: #13212e;
+      cursor: pointer;
+    }
+
+  }
+}
+
+.YoneticiPaneliTamSayfaKapsamaAlani{
+  position: relative;
+  display:block;
+  width: 100%;
+  height:auto;
+  margin:0 auto;
+  padding:0;
+  overflow: hidden;
+  text-align: center;
+  background-color: #123035;
+}
+
+.YoneticiPaneliSinirlamaAlani{
+  display: block;
+  width: 75%; // Kalan 25%
+  height: auto;
+  margin:0 auto;
+  padding:0;
+  overflow: hidden;
+  text-align:center;
+}
+
+.YoneticiPaneliSolMenuAlani{
+  position: relative;
+  float: left;
+  display:block;
+  width: 25%;
+  height: auto;
+  margin:0 auto;
+  padding: 0;
+  overflow: hidden;
+  border:none;
+  outline:none
+}
+
+.YonetimPaneliSolMenuListeAlani{
+  display: block;
+  width: 100%;
+  height: auto;
+  margin:0 auto;
+  padding:0;
+  overflow: hidden;
+  text-align: left;
+  vertical-align: top;
+  list-style: none;
+  background-color:#201d5633;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  @include KutuKoseleriniYuvarla();
+  margin-top: 10px;
+  .YonetimPaneliSolMenuElemanlari{
+    display:block;
+    width: calc(80% - 10px);
+    height: 30px;
+    margin:0 auto;
+    padding:0;
+    overflow: hidden;
+    text-align: left;
+    line-height: 30px;
+    background-color: red;
+    margin-bottom: 5px;
+    padding-left: 10px;
+    background-color: #35352bba;
+    cursor: pointer;
+    border: 1px solid #598c78;
+    @include baglantiEtiketiSifirla(){
+      font-size: 14px;
+      @include gecisEgrisi();
+    };
+    @include gecisEgrisi();
+    @include KutuKoseleriniYuvarla();
+    &:hover{
+      @include gecisEgrisi();
+      background-color: #122535;
+    }
+  }
+  .YonetimPaneliSolMenuLogoAlani{
+    display: block;
+    width: 100%;
+    height: auto;
+    margin:0 auto;
+    padding:0;
+    overflow:hidden;
+    text-align:center;
+    margin-bottom: 15px;
+    img{
+      display:block;
+      width: 192px;
+      height: 35px;
+      margin:0 auto;
+      padding:0;
+      overflow:hidden;
+      text-align:center;
+    }
+  }
+}
+
+.YonetiPanelSagMenuAlani{
+  position: relative;
+  display: block;
+  width: calc(60% - 35px);
+  height: auto;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+  text-align: center;
+  padding: 15px;
+  margin-top: 10px;
+  background-color: #0a3d62;
+  padding-left: 5px;
+  float: left;
+  margin-left: 8px;
+}
+
+.YoneticiSayfasiSayfalarKapsamaAlani{
+  position: relative;
+  display:block;
+  width: calc(100% - 7px);
+  height:auto;
+  margin:0 auto;
+  padding:0;
+  overflow: hidden;
+  padding-left: 7px;
+}
+
+.YoneticiSayfasiSayfalarBasligi{
+  float: left;
+  display:block;
+  width: calc(100% - 24px);
+  height: auto;
+  margin:0 auto;
+  padding:0;
+  overflow:hidden;
+  text-align:left;
+  padding:12px;
+  background-color: #e55039;
+  @include gecisEgrisi();
+  @include KutuKoseleriniYuvarla();
+  @include baglantiEtiketiSifirla(){
+    color:#2c3e50;
+    &:hover{
+      @include gecisEgrisi();
+      color: #1c2939;
+    }
+  };
+  font-size: 16px;
+  margin-bottom: 7px;
+}
+
+.YoneticiSayfasiSayfaIcerikleri{
+  display: block;
+  width: 100% -10px;
+  height: auto;
+  margin:0 auto;
+  padding:0;
+  overflow: hidden;
+  text-align: left;
+  background-color:transparent;
+  border: 1px solid #183120;
+  padding: 4px;
+  @include KutuKoseleriniYuvarla();
+}
+
+.sifirla{
+  border: none !important;
+  outline: none !important;
+}
+
+.TextAreaIylestirme{
+  overflow:auto !important;
+}
+
+.InputAciklamaMetinleriKapsamaAlani{
+  position: relative;
+  display:block;
+  width: 100%;
+  height:auto;
+  margin:0 auto;
+  padding:0;
+  overflow:hidden;
+  text-align: left;
+  vertical-align: top;
+  background-color:transparent;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 5px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  .InputAciklamaMetini{
+    float:left;
+    display:block;
+    width: 30%;
+    height: auto;
+    margin:0 auto;
+    padding:0;
+    overflow: hidden;
+    text-align: left;
+    color: #ddeedd;
+    font-size: 15px;
+    line-height: 33px;
+  }
+  .YonetimPaneliStandartInput{
+    display: block;
+    float: left;
+    width: 60%;
+    height: auto;
+    margin:0 auto;
+    padding:0;
+    overflow:hidden;
+    text-align:left;
+    padding-left: 7px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border: none;
+    outline:none;
+    background-color:initial;
+    color: white;
+    @include KutuKoseleriniYuvarla();
+    border: 1px solid #005c7a;
+    background-color: rgba(15, 44, 46, 0.89);
+    caret-color:#f9f9f9;
+    @include gecisEgrisi();
+    &:hover{
+      @include gecisEgrisi();
+      box-shadow: 0px 0px 5px 3px #227093;
+    }
+    &:focus{
+      @include gecisEgrisi();
+      box-shadow: 0px 0px 5px 3px #227093;
+    }
+  }
+}
+
+.FormdakiVerileriGondermekIcinSubmitAlani{
+  @include YonetimPaneliIcinSayfaIceriklerininFormButtonHizalandirmalari(30.90%);
+}
+.SolGeriDonButton{
+  border: 1px solid #2b0b0b;
+  display: inline;
+  padding:10px;
+  @include baglantiEtiketiSifirla();
+  @include KutuKoseleriniYuvarla();
+  &:hover{
+    background-color:#01579B;
+
+  }
+}
+
+.YonetimPaneliTextAreaKutulari{
+  display: block;
+  display: block;
+  float: left;
+  width: 60%;
+  height: 200px;
+  margin:0 auto;
+  padding:0;
+  overflow-x:hidden;
+  overflow-y:visible;
+  text-align:left;
+  padding-left: 7px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border: none;
+  outline:none;
+  background-color:initial;
+  color: white;
+  @include KutuKoseleriniYuvarla();
+  border: 1px solid #005c7a;
+  background-color: rgba(15, 44, 46, 0.89);
+  caret-color:#f9f9f9;
+  @include gecisEgrisi();
+  &:hover{
+    @include gecisEgrisi();
+    box-shadow: 0px 0px 5px 3px #227093;
+  }
+  &:focus{
+    @include gecisEgrisi();
+    box-shadow: 0px 0px 5px 3px #227093;
+  }
+
+}
+
+
+.BankaHesaplariKapsamaAlani{
+  position: relative;
+  display: block;
+  width: 100%;
+  height: auto;
+  margin:0 auto;
+  padding: 0;
+  overflow: hidden;
+  text-align: center;
+  vertical-align: top;
+  background-color:transparent;
+  margin-bottom: 10px;
+
+
+}
+
+.BankaHesaplariSinirlamaAlani{
+  @extend .BankaHesaplariKapsamaAlani;
+}
+
+.BankaHesaplariKutuModeliAlani{
+  position: relative;
+  display: block;
+  width: 100%;
+  height: auto;
+  margin:0 auto;
+  padding: 0;
+  overflow: hidden;
+  text-align: center;
+  vertical-align: top;
+  background-color: #0a2a4d;
+}
+
+.BankaHesaplariSolLogoAltMenulerAlanlariAlani{
+  display:block;
+  float: left;
+  width: 25%;
+  height:113px;
+  margin:0 auto;
+  padding:0;
+  overflow: hidden;
+  background-color: transparent;
+  text-align: center;
+  border: 1px solid #CCC;
+  .BankaLogoAlani{
+    display: block;
+    width: 100%;
+    height: 35px;
+    margin: 0 auto;
+    padding: 0;
+    margin-top: 30px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    img{
+      float: left;
+      display: block;
+      width: 100%;
+      height: 35px;
+      margin: 0 auto;
+      padding: 0;
+      overflow: hidden;
+      background-color: transparent;
+
+
+    }
+  }
+}
+
+.BankaAltMenuAlani{
+  display:block;
+  width: 100%;
+  height: auto;
+  margin:0 auto;
+  padding:0;
+  overflow:hidden;
+  text-align: center;
+  list-style: none;
+}
+
+.BankaMenuleri{
+  display:block;
+  width: 100%;
+  height: auto;
+  margin:0 auto;
+  padding:0;
+  overflow:hidden;
+  text-align: center;
+  list-style: none;
+  @include baglantiEtiketiSifirla(){
+    .BankaMenu{
+      list-style: none;
+      display: inline-block;
+      width: auto;
+      height: auto;
+      margin:0 auto;
+      padding: 0;
+      overflow: hidden;
+      text-align: center;
+      vertical-align: top;
+      margin-right: 10px;
+      img{
+        display: inline;
+        width: 20px;
+        height: 20px;
+        vertical-align: top;
+        margin-right: 2px;
+      }
+    }
+  };
+}
+
+
+
+
+.BankaHesaplariSagBilgilerAlani{
+  display: block;
+  width: calc(100% - 206px);
+  float: left;
+  height: auto;
+  margin:0 auto;
+  padding: 0;
+  overflow: hidden;
+  text-align: left;
+  background-color: transparent;
+  font-size: 15px;
+  font-weight: 400;
+  color: #ddeedd;
+  .BankaKartVeyaHesapBilgileri{
+    display: block;
+    width: 100%;
+    height: auto;
+    margin:0 auto;
+    padding: 0;
+    overflow: hidden;
+    text-align: left;
+    background-color: transparent;
+    font-size: 15px;
+    font-weight: 400;
+    color: #ddeedd;
+    margin-left: 20px;
+    margin-top: 10px;
+  }
+}
+.KartBilgileri{
+  display: block;
+  width: 100%;
+  height: auto;
+  margin:0 auto;
+  padding:0;
+  overflow: hidden;
+  text-align: left;
+  list-style: none;
+}
+
+.SiteAyarlariSagTarafYeniKrediKartiEkle{
+  display:inline;
+  width: auto;
+  height: auto;
+  margin:0 auto;
+  padding:0;
+  overflow: hidden;
+  text-align: right;
+  float: right;
+}
+
+.KargoFirmalariKapsamaAlani{
+  float: left;
+  display:block;
+  width: 100%;
+  height:auto;
+  margin:0 auto;
+  padding:0;
+  overflow: hidden;
+  text-align: center;
+}
+.KargoFirmalariSinirlamaAlani{
+  display:block;
+  width: calc(100% - 20px);
+  height:auto;
+  margin:0 auto;
+  padding:0;
+  overflow: hidden;
+  text-align: center;
+  padding: 0px 10px 10px 10px;
+  background-color: #0a2a4d;
+}
+
+.KargoFirmalari{
+  display:block;
+  width: 100%;
+  height:auto;
+  margin:0 auto;
+  padding:0;
+  overflow: hidden;
+  text-align: center;
+  padding-left:0px;
+  padding-top: 15px;
+  text-align: center;
+  padding-bottom: 10px;
+  border-bottom: 2px dashed #ff7675;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.KargoFirmalariSolLogoAlani{
+  display: block;
+  float: left;
+  width: auto;
+  height: 30px;
+  margin:0 auto;
+  padding:0;
+  overflow: hidden;
+  text-align: left;
+  img{
+    display:block;
+    width: auto;
+    height: 30px;
+    margin:0 auto;
+    padding:0;
+    overflow: hidden;
+    text-align: center;
+  }
+}
+
+.KargoFirmasiAdi{
+  float: left;
+  display: block;
+  width: auto;
+  height: auto;
+  margin:0 auto;
+  padding:0;
+  overflow:hidden;
+  text-align: center;
+  margin-left:10%;
+  margin-top: 0px;
+  padding: 5px 7px 5px 7px;
+  background-color:#55efc4;
+  color: #2c3e50;
+  font-weight: 600;
+  @include KutuKoseleriniYuvarla()
+
+}
+
+.KargoFirmalariSagGuncelleVeSilAlani{
+  display:block;
+  float: right;
+  width: auto;
+  height: auto;
+  margin:0 auto;
+  padding:0;
+  overflow: hidden;
+  background-color:#0984e3;
+  border:1px solid #00b894;
+  padding:5px;
+  @include KutuKoseleriniYuvarla();
+  @include baglantiEtiketiSifirla(){
+    color: #2d3436;
+  }
+  .KargoGuncelle{
+    display:inline-block;
+    float: left;
+    margin:0 auto;
+    padding:0;
+    overflow:hidden;
+    text-align: left;
+    margin-left: 10px;
+    vertical-align: top;
+    img{
+      vertical-align: top;
+      margin-top: 1px;
+      margin-right: 2px;
+    }
+  }
+  }
+
+  .KargoSil{
+    display:inline-block;
+    float: left;
+    margin:0 auto;
+    padding:0;
+    overflow:hidden;
+    text-align: left;
+    margin-left: 15px;
+    margin-right: 10px;
+    vertical-align: top;
+    img{
+      vertical-align: top;
+      margin-top: 1px;
+      margin-right: 2px;
+    }
+  }
+
+
+.DestekIcerikleriAlani{
+  display: block;
+  width: calc(100% - 14px);
+  height: auto;
+  margin:0 auto;
+  padding:0;
+  overflow: hidden;
+  padding: 7px;
+  .DestekIcerikleriMetinAlanlari{
+    margin-bottom: 10px;
+    border: 1px solid #01579B;
+    @include KutuKoseleriniYuvarla();
+    @extend .DestekIcerikleriAlani;
+    .DestekIcerikleriSoruBasligi{
+      display: block;
+      float: left;
+      width: 80%;
+      height: auto;
+      margin:0 auto;
+      padding:0;
+      overflow: hidden;
+      font-size: 18px;
+      color: #c37902;
+    }
+    .DestekIcerikleriSoruCevabi{
+      display: block;
+      float: left;
+      width: 80%;
+      height: auto;
+      margin:0 auto;
+      padding:0;
+      overflow: hidden;
+      font-size: 13px;
+    }
+
+    .DestekSagGuncelleveSilAlani{
+      display: block;
+      width: auto;
+      height: auto;
+      margin:0 auto;
+      padding:0;
+      overflow:hidden;
+      @include baglantiEtiketiSifirla();
+
+      .SagGuncelleAlaniDestek{
+        display: inline-block;
+        float: left;
+        margin-left: 10%;
+        margin-top: 15%;
+        a{
+          vertical-align: top;
+          padding-left: 5px;
+        }
+      }
+      .SagSilAlaniDestek{
+        display: inline-block;
+        float: left;
+        margin-left: 5%;
+        margin-top: 15%;
+        a{
+          vertical-align: top;
+          padding-left: 5px;
+        }
+      }
+
+    }
+  }
+}
+
+.MenulerSinirlamaAlani{
+  position: relative;
+  display:block;
+  width: calc(100% - 6px);
+  height:auto;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+  padding:3px;
+}
+
+.MenulerKapsamaAlani{
+  display:block;
+  width: calc(100% - 10px);
+  height:auto;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+  padding: 0 5px 5px 5px;
+  .MenulerAlani{
+    @extend .MenulerKapsamaAlani;
+    padding-bottom: 10px;
+    border-bottom: 2px double #17567f;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    padding-top: 3px;
+  }
+
+}
+
+.MenuUrunTuruAlani{
+  display: block;
+  width: calc(100% / 3);
+  float: left;
+  margin:0 auto;
+  padding:0;
+  overflow:hidden;
+  text-align: left;
+}
+
+.MenulerUrunTuruMenusuAlani{
+  @extend .MenuUrunTuruAlani;
+}
+
+.MenulerGuncelleveSilSagAlan{
+  @extend .MenuUrunTuruAlani;
+  float: right;
+  @include baglantiEtiketiSifirla();
+  .KargoGuncelle{
+    float: left;
+    display:inline-block;
+    img{
+      vertical-align: top;
+      margin-right: 2px;
+    }
+    margin-left: 30%;
+  }
+  .KargoSil{
+    display: inline-block;
+    img{
+      vertical-align: top;
+
+    }
+  }
+}
+
+
+
+
+
+
+
+.YoneticilerSinirlamaAlani{
+  position: relative;
+  display:block;
+  width: calc(100% - 6px);
+  height:auto;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+  padding:3px;
+}
+
+.YoneticilerKapsamaAlani{
+  display:block;
+  width: calc(100% - 10px);
+  height:auto;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+  padding: 0 5px 5px 5px;
+  .YoneticilerAlani{
+    @extend .YoneticilerKapsamaAlani;
+    padding-bottom: 10px;
+    border-bottom: 2px double #17567f;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    padding-top: 3px;
+  }
+
+}
+
+.YoneticiBlok{
+  display: block;
+  width: calc(100% / 5);
+  float: left;
+  margin:0 auto;
+  padding:0;
+  overflow:hidden;
+  text-align: left;
+}
+
+.YoneticilerUrunTuruMenusuAlani{
+  @extend .YoneticiBlok;
+}
+
+.YoneticilerGuncelleveSilSagAlan{
+  @extend .YoneticiBlok;
+  float: right;
+  @include baglantiEtiketiSifirla();
+  .KargoGuncelle{
+    float: left;
+    display:inline-block;
+    img{
+      vertical-align: top;
+      margin-right: 2px;
+    }
+    margin-left: 30%;
+  }
+  .KargoSil{
+    display: inline-block;
+    img{
+      vertical-align: top;
+
+    }
+  }
+}
+
+
+
+.UyelerKapsamaAlani{
+  display: block;
+  float: left;
+  width: 100%;
+  height: auto;
+  margin:0 auto;
+  padding:0;
+  overflow: hidden;
+  .UyelerSinirlamaAlani{
+    @extend .UyelerKapsamaAlani;
+  }
+}
+
+.UyeninBilgilerininOlduguAlan{
+  display: block;
+  float: left;
+  width: calc(100% - 10px);
+  height: auto;
+  margin:0 auto;
+  padding:0;
+  overflow: hidden;
+  border: 1px solid #CCC;
+  margin-bottom: 7px;
+  padding-left: 5px;
+  padding-right: 2px;
+  @include baglantiEtiketiSifirla();
+  @include KutuKoseleriniYuvarla(3px);
+  .UyeBilgileri{
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    margin:0 auto;
+    padding:0;
+    overflow: hidden;
+    list-style: none;
+    padding: 5px;
+
+    .bilgiler{
+      display:inline-block;
+      width: auto;
+      margin:0 auto;
+      padding:0;
+      overflow:hidden;
+      text-align: left;
+      float: left;
+      width: calc(100% /3 );
+      padding:2px;
+      margin-right: 2px;
+      .UyeAciklamasi{
+        display:block;
+        width: auto;
+        height: auto;
+        float: left;
+        margin:0 auto;
+        padding:0;
+        overflow:hidden;
+        text-align: left;
+
+      }
+    }
+  }
+
+
+}
+
+.UyeyiSilAlani{
+  display: inline-block;
+  float: right;
+  width: auto;
+  height: auto;
+  margin:0 auto;
+  padding:0;
+  overflow: hidden;
+  text-align: center;
+  margin-left:5%;
+  @include baglantiEtiketiSifirla();
+  img{
+    display: inline;
+    width: 20px;
+    height: 20px;
+    vertical-align: top;
+    margin-left: 3px;
+    margin-right: 3px;
+  }
+  padding: 10px;
+  background-color: #01579B;
+  @include KutuKoseleriniYuvarla();
+  margin-right: 5%;
+  margin-top: -5.3%;
+}
+
+
+
+
+
+
+
+
+
+
+/*SAYFALAMA ALANİ*/
+.SayfalamaKapsamaAlani{
+  position: relative;
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+  text-align: center;
+  outline: none;
+  color: initial;
+  margin-top: 15px;
+  .SayfalamaSinirlamaAlani{
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+    text-align: center;
+    .Sayfalama{
+      display: inline-block;
+      width: auto;
+      height: auto;
+      margin: 0 auto;
+      padding: 0;
+      overflow: hidden;
+      text-align: center;
+      border: none;
+      outline:none;
+      border: 1px solid #CCC;
+      padding:4px 11px 4px 10px;
+      background-color: #009688;
+      border-radius: 3px;
+      cursor: pointer;
+      color: #fff;
+      margin-right: 3px;
+      @include baglantiEtiketiSifirla(a);
+      @include gecisEgrisi();
+      &:hover{
+        background-color: #004D40;
+        cursor: pointer;
+
+
+      }
+
+
+
+    }
+
+    .SayfalamaPasif{
+      background-color: #FFA000;
+      &:hover{
+        background-color: #FFA000;
+      }
+    }
+
+  }
+
+}
+
+
+.UrunAramaAlani{
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  padding-bottom: 0;
+  overflow: hidden;
+  float: left;
+  background-color: transparent;
+}
+
+.FormInputAramaAlani{
+  float: left;
+  display:block;
+  width: 95%;
+  height: auto;
+  margin: 0 auto;
+  padding:0;
+  overflow: hidden;
+  text-align: center;
+  margin-top: 5px;
+  user-select: all;
+}
+
+
+
+.AramaAlaniInputu{
+  display: block;
+  width: calc(100% - 7px);
+  height: auto;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+  text-align: left;
+  padding-left: 5px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  border: none;
+  outline:none;
+  background-color: transparent;
+  border:1px solid #CCC;
+  border-radius:2px;
+  -webkit-user-select: text;
+  -moz-user-select: text;
+  -ms-user-select: text;
+  user-select: text;
+  color: #342321;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.FormGonderButtonu{
+  display: block;
+  float: left;
+  width: calc(5% - 2px);
+  height: auto;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+  margin-top: 5px;
+  margin-left: 2px;
+  @include gecisEgrisi(500ms);
+  &:hover{
+    @include gecisEgrisi(500ms);
+    background-color: #dddddd;
+  }
+}
+
+.AramaAlaniButtonu {
+  display: block;
+  float: left;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+  border: none;
+  outline: none;
+  border:1px solid #CCC;
+  line-height: 31px;
+  background: url("../Resimler/AraButonuIciBuyuteci.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 55%;
+  border-radius: 2px;
+}
+
+
+.AramaAlaniUyelerIcerisinde{
+  margin-bottom: 15px;
+}
+
+.YoneticiSayfasiuyelerAramaButtonu{
+  border: 1px solid #c37902 !important;
+}
+
+.UyelerInput{
+  border: 1px solid #c37902 !important;
+  color: #ddeedd;
+}
+
+.Silinmisolanuyelerigeriac{
+  position: relative;
+  display:block;
+  float: left;
+  width: calc(100% - 13px);
+  height: auto;
+  margin:0 auto;
+  padding:0;
+  overflow:hidden;
+  text-align: center;
+  vertical-align: top;
+  background-color: #3e7d58;
+  color: #fff;
+  font-weight: 500;
+  padding:5px;
+  margin-bottom: 5px;
+  @include gecisEgrisi();
+  @include KutuKoseleriniYuvarla();
+  &:hover{
+    @include gecisEgrisi();
+    background-color: #254b36;
+
+  }
+
+}
+
+
+.YorumSayfasiKapsamaAlani{
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+  border: none;
+  outline: none;
+  font-size: 13px;
+}
+.YorumlarAlani{
+  @extend .YorumSayfasiKapsamaAlani;
+  width: calc(100% - 12px);
+  border: 1px solid #CCC;
+  padding: 5px 5px 0px 5px;
+  margin-bottom: 7px;
+  margin-top: 7px;
+
+  @include KutuKoseleriniYuvarla();
+
+
+}
+
+.YorumMetinAlani{
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  padding: 0;
+  max-height: 100px;
+  overflow: auto;
+  border: none;
+  outline: none;
+
+}
+
+.YorumMetniniSilAlani{
+  display: block;
+  width: auto;
+  float: right;
+  height: auto;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+  border: none;
+  outline: none;
+  padding: 5px;
+  margin-right: -0.5px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  background-color: #f1c40f;
+  @include gecisEgrisi(400ms);
+
+  @include KutuKoseleriniYuvarla();
+  cursor: pointer;
+  @include baglantiEtiketiSifirla(){
+    vertical-align: top;
+    display:inline-block;
+    width: auto;
+    height: auto;
+    margin:0 auto;
+    padding:0;
+    overflow:hidden;
+    color: #0f0f0f;
+    font-weight: 600;
+    img{
+      display: inline-block;
+      vertical-align: top;
+      margin-top: -1px;
+      margin-right: -2px;
+    }
+  };
+  &:hover{
+    background-color: #7a590f;
+    a{
+      @include gecisEgrisi(400ms);
+      color: #fff;
+      font-weight: 600;
+    }
+  }
+}
+
+
+
+.YorumPuanlamaAlani{
+  float: left;
+  display:block;
+  width: auto;
+  height: auto;
+  margin:0 auto;
+  padding:0;
+  overflow:hidden;
+  margin-top: 15px;
+  margin-left: 5px;
+  img{
+    display:block;
+    width: 64px;
+    height: 11px;
+    margin:0 auto;
+    padding:0;
+    overflow:hidden;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

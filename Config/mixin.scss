@@ -1,0 +1,208 @@
+@function fontAilesi(){
+  @return 'Open Sans', sans-serif;
+}
+
+@mixin responsive($min-width,$max-width){
+  @media only screen and (min-width:$min-width) and (max-width:$max-width){
+    @content
+  }
+}
+@mixin gecisEgrisi($saniye:600ms){
+  -webkit-transition: $saniye ease-out all;
+  -moz-transition: $saniye ease-out all ;
+  -ms-transition: $saniye ease-out all ;
+  -o-transition: $saniye ease-out all ;
+  transition: $saniye ease-out all ;
+}
+
+@mixin baglantiEtiketiSifirla($gelenTag:a,$linkRengi:white){
+  #{$gelenTag}:active,#{$gelenTag}:visited,#{$gelenTag}:link{
+    text-decoration: none;
+    color: $linkRengi;
+    @content
+  }
+}
+
+@mixin sifirla(){
+  text-decoration: none;
+  color: initial;
+}
+
+@mixin dogruSifirla($tag:a){
+  #{$tag}:active, #{$tag}:visited,#{$tag}:link{
+    @content
+  }
+}
+
+
+
+@mixin InputAlanlari(){
+  position: relative;
+  float: left;
+  display: block;
+  width: calc(100% - 9px);
+  height: 28px;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+  border: none;
+  outline: none;
+  background-color: #227093;
+  color: #d1ccc0;
+  padding-left: 7px;
+  font-size:$standartFormFontBoyutu;
+  font-family: fontAilesi;
+  padding-top:2px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  margin-bottom: 5px;
+  padding-bottom: 1px;
+  margin-left: 1px;
+  @content;
+  @include gecisEgrisi(600ms);
+  &:focus,&:hover{
+    @include gecisEgrisi(600ms);
+    background-color: #0277BD;
+  }
+
+}
+@mixin SelectAlanlari(){
+  position: relative;
+  float: left;
+  display: block;
+  width: calc(100% - 1px);
+  height: 30px;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+  border: none;
+  outline: none;
+  background-color: #227093;
+  color: #d1ccc0;
+  padding-left: 7px;
+  font-size:$standartFormFontBoyutu;
+  font-family: fontAilesi;
+  padding-top:1px;
+  margin-left: 1px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  margin-bottom: 7px;
+  padding-bottom: 1px;
+  @include gecisEgrisi(600ms);
+  &:focus,&:hover{
+    @include gecisEgrisi(600ms);
+    background-color: #0277BD;
+  }
+
+}
+@mixin TextAreaAlanlari(){
+  position: relative;
+  float: left;
+  display: block;
+  width: calc(100% - 8px);
+  height: 100px;
+  margin: 0 auto;
+  padding: 0;
+  overflow: auto;
+  border: none;
+  outline: none;
+  background-color: #227093;
+  color: #d1ccc0;
+  padding-left: 7px;
+  font-size:$standartFormFontBoyutu;
+  font-family: fontAilesi;
+  padding-top:7px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  margin-bottom: 7px;
+  margin-left: 1px;
+  text-align: left;
+  resize: none;
+  @include gecisEgrisi(600ms);
+  &:focus,&:hover{
+    @include gecisEgrisi(600ms);
+    background-color: #0277BD;
+  }
+}
+
+@mixin StandartGonderbuttonu($StandartButtonYaziRengi:#ff5252,$StandartButtonArkaPlanRengi:#34495e){
+  position: relative;
+  float: left;
+  display: block;
+  width: auto;
+  height: 30px;
+  line-height: 22px;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+  border: none;
+  outline:none;
+  padding: 5px 50px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  font-size:$standartFormFontBoyutu;
+  letter-spacing: 0.3px;
+  font-family: fontAilesi;
+  @include gecisEgrisi(600ms);
+  background-color: $StandartButtonArkaPlanRengi;
+  color: $StandartButtonYaziRengi;
+  cursor: pointer;
+  font-weight: 600;
+  margin-left: 1px;
+  @content;
+  &:hover{
+    @include gecisEgrisi(600ms);
+    background-color: #01579B;
+    color: #E0E0E0;
+    cursor: pointer;
+
+  }
+}
+
+@mixin KutuKoseleriniYuvarla($standart:3px){
+  border-radius: $standart;
+
+}
+
+@mixin YonetimPaneliIcinSayfaIceriklerininFormButtonHizalandirmalari($YuzdeselOlarakSolMarginLeftGenislik:30.90%,$Paddingler:8px 8px 8px 8px){
+  display: block;
+  width: auto;
+  height: auto;
+  margin-left: #{$YuzdeselOlarakSolMarginLeftGenislik};
+  padding:0;
+  .YonetimPaneliStandartInput{
+    display:block;
+    float: left;
+    width: auto;
+    height: auto;
+    margin:0 auto;
+    padding:0;
+    text-align: center;
+    overflow:hidden;
+    border:none;
+    outline:none;
+    color: initial;
+    padding:#{$Paddingler};
+    @include KutuKoseleriniYuvarla();
+    background-color: #005c7a;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    border: 1px solid transparent;
+    @include gecisEgrisi();
+    &:hover{
+      background-color: #00374e;
+      border: 1px solid #ffb142;
+    }
+
+  }
+}
+
+
+
+
+
