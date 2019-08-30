@@ -6,7 +6,7 @@ global $DolarKuru;
 global $EuroKuru;
 global $UcretsizKargoBaraji;
 if($e->setEdilmisIseSession("Kullanici")){
-/**/
+
 $StokIcinSepettekiUrunlerSorgusu = $veritabani->prepare("SELECT * FROM sepetim WHERE UyeId = ? ");
 $StokIcinSepettekiUrunlerSorgusu->execute([$KullaniciID]);
 $StokSayisi = $StokIcinSepettekiUrunlerSorgusu->rowCount();
